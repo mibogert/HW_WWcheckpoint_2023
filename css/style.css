@@ -85,6 +85,25 @@ img: hover {
 
 }
 
+.zoom {
+    position: relative;
+    display: inline-block;
+}
+
+.zoom img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.9s ease-in-out;
+}
+
+.zoom:hover img {
+    transform: scale(1.2);
+}
+
+.zoom:hover img:hover {
+    transform: scale(1);
+}
+
 .tops {
     color:#0000ff;
     font-size: larger;
