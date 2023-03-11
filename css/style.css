@@ -1,37 +1,201 @@
-/* *, header, footer, body {
+
+
+body {
+    background-color: #FFFFED;
+}
+
+h2 {
+    font-family: Roboto;
+    font-size: larger;
+    text-align: center;
+    color:#000000
+
+}
+.nav-h1 {
+    color: #0000ff;
+    font-family: "Open Sans Bold", Roboto;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    background-color: #a5b3b0;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: url("/images/raised_fem_fist.jpeg");
+    overflow: hidden;
+    position:relative;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    padding: 10px 0;
+    animation: move-background 15s linear infinite;
+    padding: 50px;
+}
+
+
+ul {
+    /* overflow: hidden; */
+    background-color: transparent;  
+    list-style-type: none;
+
+} 
+
+
+#box1, #box2, #box3, #box4 {
+    display: inline-block;
+    align-items: center;
+    border: 3px #000000 solid;
+    border-radius: 45px;
+    padding: 10px;
+    margin: 0px 50px 10px 50px;
+    position: relative;
+    z-index: 1;
     background-color: #FFFFED;
 
 }
 
-body {
+a {
+    
+    position: relative;
+    z-index: 3;
+    text-decoration: none;
+    color:#0000ff;
     font-family: "Open Sans Bold", Roboto;
+    font-size: 20px;
+    font-weight: bold;
+   
 }
 
-h1 {
-    
-} */
+a:hover {
+    color: red;
+}
+
+.navbar:hover { 
+    animation: move-background 15s linear infinite;
+}
+
+@keyframes move-background {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
 
 
+p {
+    font-family: "Roboto Mono", Roboto;
+}
 
 
+#img-index {
+    display:flex;
+    flex-direction: row;
+    border: 3px #000000 solid;
+    border-radius: 10px;
+    background-size: cover;
+    width: 600%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+#img-lit {
+    display: block;
+    border: 3px #000000 solid;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+
+}
+
+#img-hist {
+    display: block;
+    border: 3px #000000 solid;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+
+}
+
+.zoom {
+    position: relative;
+    display: inline-block;
+}
+
+.zoom img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.9s ease-in-out;
+}
+
+.zoom:hover img {
+    transform: scale(1.2);
+}
+
+.zoom:hover img:hover {
+    transform: scale(1);
+}
+
+.tops {
+    color:#0000ff;
+    font-size: larger;
+}
 /* Add and style back to top button with proper linkage */
 /* .top {
 
 } */
-main div{
-    border: 2px solid blue;
+main  div{
+    border: 1px solid none;
+    padding: 50px;
+
 }
 
-main { 
+
+#l-main {
     display:grid;
-    grid-template-columns: 80%;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto;
     border: 2px solid black;
 }
 
-@media screen and (min-width: 780px) {
-    main { 
-        grid-template-columns: 45% 45%;
-        justify-content: ;
+.fa-solid fa-venus {
+    color: pink;
+}
 
+@media (prefers-reduced-motion: reduce) {
+    .navbar:hover {
+      animation: none;
+      background-position: center;
+    }
+  }
+
+@media screen and (min-width: 780px) {
+    main {
+        grid-template-columns: 45% 45%;
+        justify-content: auto;
+
+    }
+}
+
+@media screen and(max-width:780px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .navbar-links {
+        display:block;
+        text-align: center;
     }
 }
