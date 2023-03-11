@@ -1,133 +1,37 @@
+/* *, header, footer, body {
+    background-color: #FFFFED;
 
+}
 
 body {
-    background-color: #FFFFED;
-}
-
-h2 {
-    font-family: Roboto;
-    font-size: larger;
-    text-align: center;
-    color:#000000
-
-}
-.nav-h1 {
-    color: #0000ff;
     font-family: "Open Sans Bold", Roboto;
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
-    background-color: #a5b3b0;
-    padding: 10px;
-    margin-bottom: 20px;
 }
 
-.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Open Sans Bold", Roboto;
-    font-size: 30px;
-    color: #000000;
-    font-weight: bold;
-}
-
-.navbar li {
-    display: inline-block;
-    border: 3px #000000 solid;
-    border-radius: 45px;
-    padding: 10px;
-    margin: 0px 50px 10px 50px;
-
-}
-
-a {
-    text-decoration: none;
-    color:#0000ff;
-}
-
-a:hover {
-    color: red;
-}
+h1 {
+    
+} */
 
 
-#img-index {
-    display: inline-block;
-    border: 3px #000000 solid;
-    border-radius: 10px;
-    width: 600%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-}
 
-#img-lit {
-    display: block;
-    border: 3px #000000 solid;
-    border-radius: 10px;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
 
-}
-
-#img-hist {
-    display: block;
-    border: 3px #000000 solid;
-    border-radius: 10px;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-
-}
-
-.zoom {
-    position: relative;
-    display: inline-block;
-}
-
-.zoom img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.9s ease-in-out;
-}
-
-.zoom:hover img {
-    transform: scale(1.2);
-}
-
-.zoom:hover img:hover {
-    transform: scale(1);
-}
-
-.tops {
-    color:#0000ff;
-    font-size: larger;
-}
 /* Add and style back to top button with proper linkage */
 /* .top {
 
 } */
-main  div{
-    border: 1px solid none;
-    padding: 50px;
-
+main div{
+    border: 2px solid blue;
 }
-
 
 main { 
     display:grid;
-    grid-template-columns: 10%;
+    grid-template-columns: 80%;
     border: 2px solid black;
 }
 
-
 @media screen and (min-width: 780px) {
-    main {
+    main { 
         grid-template-columns: 45% 45%;
-        justify-content: auto;
+        justify-content: ;
 
     }
 }
