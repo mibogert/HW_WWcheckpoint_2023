@@ -84,7 +84,7 @@ main div{
 
 /* navbar items organization */
 ul {
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
     overflow: hidden;
     background-color: transparent;  
@@ -93,8 +93,8 @@ ul {
 
 /* navbar items display properties */
 #box1, #box2, #box3, #box4 {
-    /* display: inline-block; */
-    /* align-items: center; */
+    display: inline-block;
+    align-items: center;
     border: 3px #000000 solid;
     border-radius: 45px;
     padding: 10px;
