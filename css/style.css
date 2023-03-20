@@ -28,7 +28,7 @@ p {
     height: 100%;
     background-image: url("../images/fem_lit_background.jpg");
     background-repeat: repeat-x repeat-y;
-    opacity: 0.05;
+    opacity: 0.06;
     background-attachment: fixed;
 }
 
@@ -93,8 +93,8 @@ ul {
 
 /* navbar items display properties */
 #box1, #box2, #box3, #box4 {
-    display: inline-block;
-    align-items: center;
+    /* display: inline-block; */
+    /* align-items: center; */
     border: 3px #000000 solid;
     border-radius: 45px;
     padding: 10px;
@@ -153,6 +153,7 @@ a:hover {
     grid-column: 1 / span 3;
     grid-row: 2 / span 1;
 }
+
 #div3 {
     grid-column: 1 / span 3;
     grid-row: 3 / span 1;
@@ -192,17 +193,29 @@ a:hover {
     /* display: block; */
     border: 3px #000000 solid;
     border-radius: 10px;
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
+    /* width: 30%; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* padding: 10px; */
 
 }
 /* div items lit.html: 17 in total */
 #bell {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
+
+#bell img {
+    width: 30%;
+    height: 70%;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+/* #bell p { */
+    /* position: absolute; */
+
+/* } */
 
 /* hist.html grid layout & border styling */
 #h-main {
@@ -300,27 +313,48 @@ a:hover {
     }
   }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 480px) {
     .navbar {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: space-around !important;
+    }
+    .navbar-links {
+        display:block;
+        text-align: center;
+        padding: 5px;
+    }
+    ul {
+        margin: 0px;
+        padding: 0px;
+    }
+    #box1, #box2, #box3, #box4 {
+        margin: 5px 0px;
     }
 }
   
-@media screen and (max-width:780px) {
+@media screen and (max-width:768px) {
         .navbar {
-            flex-direction: column;
-            justify-content: center;
+            flex-direction: column !important;
+            justify-content: center !important;
+            align-items: center !important;
         }
         .navbar-links {
             display:block;
             text-align: center;
+            padding: 5px;
+        }
+        ul {
+            margin: 0px;
+            padding: 0px;
+        }
+        #box1, #box2, #box3, #box4 {
+            margin: 5px 0px;
         }
     }
 
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1024px) {
     main {
         grid-template-columns: 45% 45%;
         justify-content: auto;
