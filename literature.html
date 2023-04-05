@@ -9,9 +9,16 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 
+  
   <!-- connect to a Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
   <!-- connect to a Font Aweseom font -->
+  <script src="https://kit.fontawesome.com/6ee76ee33a.js" crossorigin="anonymous"></script>
   <!-- connect to a favicon -->
+  <link rel = "shortcut icon" type = "image/x-icon" href = "image/favicon2.png">
+
 
   <title>Women's Web - Literature</title>
 </head>
@@ -44,7 +51,7 @@
    <h2 class = "odd-item1">
     <a href = "https://en.wikipedia.org/wiki/Bell_hooks">bell hooks</a>
   </h2>
-    <img class = "img-lit" src= "images/bell_hooks.jpg"  width = "200" alt = "Image of bell hooks">
+    <img class = "img-lit vine-border" src= "images/bell_hooks.jpg"  width = "200" alt = "Image of bell hooks">
     <!-- <h3 class = "odd-item2">About:</h3> -->
     <p class = "odd-item3">
       Bell Hooks is an American author, professor, feminist, and social activist.
@@ -64,8 +71,8 @@
 <!-- div 2 -->
   <div class = "zoom even">
    <h2 class = "even-item1"> Simone de Beauvoir</h2>
-   <img class = "img-lit" src="images/simone_db.jpg"  width="200" alt="Image of Simone de Beauvoir">
-      <!-- <h3 class = "even-item2">About:</h3> -->
+   <img class = "img-lit" src="images/simone_db.jpg"  width="100%" alt="Image of Simone de Beauvoir">
+   <!-- <h3 class = "even-item2">About:</h3> -->
      <p class = "even-item3">
       Simone de Beauvoir was a French writer, intellectual, existentialist philosopher, political activist, feminist and social theorist. Though she did not consider herself a philosopher, she had a significant influence on both feminist existentialism and feminist theory.
      </p>
@@ -365,12 +372,21 @@
 
 <!-- footer -->
     <footer>
-      <p class="thanks">
-        Thanks for visiting! <i class="far fa-grin"> </i>
+      <canvas id = "footer-confetti"></canvas>
+      <p class= "thanks-statement">
+        <i class="fa-solid fa-venus"></i>
+        Thanks for visiting!
+        <i class="fa-solid fa-venus"></i>
       </p>
       <p>Orginal content created by Kelsey Toporski 2019</p>
       <a href="#top" class="tops">Back to Top</a>
 
     </footer>
+    <!-- connect to canvas-confetti library for footer animation -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.3/dist/canvas-confetti.min.js"></script> -->
+  <!-- connect to vine js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<!-- connect to javascript.js -->
+    <script src="js/javascript.js"></script>
   </body>
 </html>

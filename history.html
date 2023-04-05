@@ -10,8 +10,20 @@
   <link rel="stylesheet" href="css/style.css">
 
   <!-- connect to a Google font -->  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
   <!-- connect to a Font Aweseom font -->
+  <script src="https://kit.fontawesome.com/6ee76ee33a.js" crossorigin="anonymous"></script>
   <!-- connect to a favicon -->
+  <link rel = "shortcut icon" type = "image/x-icon" href = "image/favicon2.png">
+  <!-- connect to canvas-confetti library for footer animation -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.3/dist/index.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.3/html2canvas.min.js"></script>
+<!-- connect to javascript.js -->
+<script src="js/javascript.js"></script>
+
+
 
   <title class = "title">Women's Web - History</title>
 </head>
@@ -272,11 +284,14 @@
   </main>
 
     <footer>
-      <p class="thanks">
-        Thanks for visiting! <i class="far fa-grin"></i>
+      <canvas id = "footer-confetti"></canvas>
+      <p class= "thanks-statement">
+        <i class=" fa-solid fa-venus"></i>
+        Thanks for visiting! 
+        <i class= "fa-solid fa-venus"></i>
       </p>
       <p>Orginal content created by Kelsey Toporski 2019</p>
-      <a href="#top" class="tops">Back to Top</a>
+      <a href= "#top" class= "tops">Back to Top</a>
     </footer>
 </body>
 </html>
