@@ -313,22 +313,6 @@ a:hover {
     text-decoration: none;
   }
 
-  /* h2 about item */
-/* .odd-item2, .even-item2 {
-    align-self: start;
-    font-size: 50px;
-    margin-top: 20px;
-  }
-  /* odd h2 items */
-  /* .odd-item2 {
-    grid-row: 1;
-    grid-column: 2;
-  } */
-  /* even h2 items */
-  /* .even-item2 {
-    grid-row: 1;
-    grid-column: 1;
-  } */ 
   
   /* first p item */
   .odd-item3, .even-item3 {
@@ -417,14 +401,12 @@ a:hover {
 }
 
 /* hist.html img styling */
-#img-hist {
+.img-hist {
     border: 3px #000000 solid;
     border-radius: 10px;
-    width: 50%;
+    width: 70%;
     height: 75%;
-    /* margin-left: auto;
-    margin-right: auto;
-    padding: 10px; */
+    padding: 10px;
 
 }
 
@@ -453,6 +435,30 @@ a:hover {
     /* width: 60%; */
     /* height: 80%; */
     object-fit: cover;
+  }
+
+  .h-odd img:hover {
+    opacity: 0.5;
+  }
+
+  .flower-border {
+    border: none;
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.2) inset, 0 0 0 2px #FFFFFF;
+    position: relative;
+  }
+  
+  
+  .h-odd img.flower-border:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/pic_border.png);
+    border: 3px #000000 solid;
+    border-radius: 10px;
+    z-index: -1;
   }
 
   .h-even img {
@@ -520,32 +526,6 @@ a:hover {
     grid-column: 1;
   }
 
-/* img animation for lit.html & hist.html */
-/* .zoom {
-    position: relative;
-    display: inline-block;
-    transition: transform 0.9s ease-in-out;
-} 
-
-.zoom img {
-    width: 50%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-}
-
-.zoom:hover img {
-    transform: scale(1.2);
-}
-
-.zoom:hover img {
-    transform: scale(1);
-} 
-
- .zoom:hover img:not(:hover) {
-  transform: scale(1);
-} */
 
 .tops {
     color:#0000ff;
@@ -583,8 +563,6 @@ a:hover {
   overflow: hidden;
   text-align: center;
   word-wrap: break-word;
-  /* white-space: pre-wrap; */
-  /* border: 1px solid pink; */
   margin: 0 auto;
 }
 
@@ -629,7 +607,7 @@ a:hover {
   font-size: 20px;
   text-align: center;
   color: #000000;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 
 .skip-link {
